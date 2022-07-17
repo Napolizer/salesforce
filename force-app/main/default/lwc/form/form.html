@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="User Information" icon-name="standard:user">
+        <lightning-input label="First Name" type="text" onchange={handleUserFirstNameChange}></lightning-input>
+        <lightning-input label="Last Name" type="text" onchange={handleUserLastNameChange}></lightning-input>
+        <lightning-input label="BirthDate" type="date" onchange={handleUserBirthDateChange}></lightning-input>
+        <lightning-input label="Email" type="email" onchange={handleUserEmailChange}></lightning-input>
+    </lightning-card>
+    <lightning-card title="Event Information" icon-name="standard:record">
+        <lightning-input label="Name" onchange={handleEventNameChange}></lightning-input>
+        <lightning-input label="Location" onchange={handleEventLocationChange}></lightning-input>
+        <lightning-input label="Date" type="date" onchange={handleEventDateChange}></lightning-input>
+        <lightning-textarea label="Description" onchange={handleEventDescriptionChange}></lightning-textarea>
+        <lightning-button label="Create" variant="brand" onclick={handleCreation}></lightning-button>
+    </lightning-card>
+</template>
